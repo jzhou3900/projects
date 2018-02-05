@@ -1,0 +1,19 @@
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script src="https://www.nvcc.edu/webforms/rental/Scripts/jquery.dd.min.js"></script>
+        <link rel="stylesheet" href="/css/msdropdown/dd.css">
+        <script>
+            $(document).ready(function (e) {
+                try {
+                    $("#webmenu").msDropDown();
+                } catch (e) {
+                    alert(e.message);
+                }
+            });
+        </script>
+        <select id="dropdownlist1">
+            <option value="Sample1" data-image="https://www.nvcc.edu/webforms/rental/images/Ustyle.GIF">Sample1</option>
+            <option value="Sample2" data-image="https://www.nvcc.edu/webforms/rental/images/Ustyle.GIF">Sample2</option>
+            <option value="Sample3" data-image="https://www.nvcc.edu/webforms/rental/images/Ustyle.GIF">Sample3</option>
+            <option value="Sample4" selected="selected" title="http://i.imgur.com/oqYwen1.jpg">Sample4</option>
+            <option value="Sample5" data-image="https://www.nvcc.edu/webforms/rental/images/Ustyle.GIF">Sample5</option>
+        </select>
